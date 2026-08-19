@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generation Model School & College | Tehkal Payan, Peshawar</title>
+  <meta name="description" content="Generation Model School & College, Tehkal Payan, Peshawar — a higher secondary educational institution focused on academic learning, student development and healthy activity.">
+  <style>
+    :root{
+      --navy:#102a43; --blue:#1769aa; --sky:#eaf5ff; --gold:#f4b942;
+      --text:#243b53; --muted:#627d98; --white:#fff; --light:#f7fafc;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--text);line-height:1.6;background:var(--white)}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid #e6edf3}
+    .nav{height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;color:var(--navy)}
+    .logo{width:46px;height:46px;border-radius:13px;background:linear-gradient(135deg,var(--blue),var(--navy));color:white;display:grid;place-items:center;font-weight:900;font-size:20px}
+    .brand span{display:block;font-size:14px;color:var(--muted);font-weight:600}
+    nav{display:flex;gap:25px;font-weight:650;font-size:14px}
+    nav a:hover{color:var(--blue)}
+    .menu{display:none;border:0;background:none;font-size:25px}
+    .hero{background:linear-gradient(135deg,#eff8ff 0%,#fff 55%,#fff8e8 100%);padding:95px 0 85px;overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:55px;align-items:center}
+    .eyebrow{display:inline-block;background:#dff0ff;color:var(--blue);padding:7px 13px;border-radius:999px;font-size:13px;font-weight:800;margin-bottom:18px}
+    h1{font-size:clamp(40px,6vw,68px);line-height:1.05;letter-spacing:-2px;color:var(--navy);margin-bottom:20px}
+    .hero p{font-size:19px;color:var(--muted);max-width:650px}
+    .buttons{display:flex;gap:13px;margin-top:28px;flex-wrap:wrap}
+    .btn{padding:13px 20px;border-radius:10px;font-weight:800;display:inline-block}
+    .primary{background:var(--blue);color:#fff}.primary:hover{background:var(--navy)}
+    .secondary{border:1px solid #c9d7e3;color:var(--navy);background:#fff}
+    .hero-card{background:#fff;border:1px solid #dce8f2;border-radius:24px;padding:28px;box-shadow:0 20px 50px rgba(16,42,67,.10)}
+    .hero-card .school-mark{height:235px;border-radius:18px;background:linear-gradient(145deg,var(--navy),var(--blue));display:grid;place-items:center;color:#fff;text-align:center;padding:30px}
+    .school-mark .big{font-size:58px;font-weight:900}.school-mark h2{font-size:25px;margin-top:8px}.school-mark p{color:#d9ecff;font-size:14px}
+    section{padding:82px 0}
+    .section-head{text-align:center;max-width:720px;margin:0 auto 42px}
+    .section-head h2{font-size:38px;line-height:1.15;color:var(--navy);margin-bottom:12px}
+    .section-head p{color:var(--muted)}
+    .about{background:var(--light)}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+    .card{background:#fff;border:1px solid #e1eaf1;border-radius:18px;padding:28px}
+    .card h3{color:var(--navy);margin-bottom:10px;font-size:21px}
+    .card p{color:var(--muted)}
+    .facts{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px}
+    .fact{padding:22px;border-radius:16px;background:#fff;border:1px solid #e1eaf1;text-align:center}
+    .fact strong{display:block;font-size:28px;color:var(--blue)}
+    .fact span{font-size:13px;color:var(--muted)}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .feature{padding:28px;border:1px solid #e1eaf1;border-radius:18px;background:#fff}
+    .icon{font-size:30px;margin-bottom:15px}
+    .feature h3{color:var(--navy);margin-bottom:8px}
+    .feature p{color:var(--muted);font-size:15px}
+    .quote{background:var(--navy);color:#fff;text-align:center}
+    .quote blockquote{font-size:clamp(25px,4vw,40px);font-weight:750;line-height:1.25;max-width:900px;margin:auto}
+    .quote p{margin-top:18px;color:#bcd2e5}
+    .contact{background:#f8fbfe}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+    .contact-item{display:flex;gap:15px;margin:20px 0}
+    .contact-item b{display:block;color:var(--navy)}
+    .contact-item span{color:var(--muted)}
+    .map{min-height:300px;border-radius:18px;background:linear-gradient(135deg,#dceeff,#f5f9fc);display:grid;place-items:center;text-align:center;padding:30px;border:1px solid #dbe7f0}
+    footer{background:#091e30;color:#c9d8e4;padding:28px 0}
+    .footer-row{display:flex;justify-content:space-between;gap:20px;align-items:center}
+    footer small{color:#8fa7b9}
+    @media(max-width:800px){
+      nav{display:none}.menu{display:block}
+      .hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}
+      .features{grid-template-columns:1fr}
+      .facts{grid-template-columns:1fr}
+      .hero{padding:65px 0}
+      section{padding:60px 0}
+      .footer-row{flex-direction:column;text-align:center}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="brand" href="#home">
+      <div class="logo">G</div>
+      <div>Generation Model School & College<span>Tehkal Payan, Peshawar</span></div>
+    </a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#values">Values</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="menu" onclick="document.querySelector('nav').style.display = document.querySelector('nav').style.display==='flex'?'none':'flex'">☰</button>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow">TEHKAL PAYAN • PESHAWAR</span>
+        <h1>Learning today.<br>Leading tomorrow.</h1>
+        <p>Generation Model School & College is a higher secondary educational institution in Tehkal Payan, Peshawar, providing a school-to-college learning environment with a focus on education, student development and healthy activity.</p>
+        <div class="buttons">
+          <a class="btn primary" href="#about">Explore the School</a>
+          <a class="btn secondary" href="#contact">Contact Information</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="school-mark">
+          <div>
+            <div class="big">G</div>
+            <h2>Generation Model</h2>
+            <p>School & College • Tehkal Payan, Peshawar</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-head">
+        <h2>About Generation Model School & College</h2>
+        <p>A learning community built around academic progress, student wellbeing and personal development.</p>
+      </div>
+      <div class="about-grid">
+        <div class="card">
+          <h3>Our School</h3>
+          <p>Generation Model School & College is located in Tehkal Payan, Peshawar. Public education records list the institution as a Higher Secondary school, while examination records show students appearing under the Generation Model School name.</p>
+        </div>
+        <div class="card">
+          <h3>Our Approach</h3>
+          <p>The school promotes the idea that healthy children learn better. Physical activity and a balanced school experience can support students' fitness, confidence and readiness to learn.</p>
+        </div>
+      </div>
+      <div class="facts">
+        <div class="fact"><strong>Higher Secondary</strong><span>Institution level listed by KP Private Schools Regulatory Authority</span></div>
+        <div class="fact"><strong>Tehkal Payan</strong><span>Peshawar, Khyber Pakhtunkhwa</span></div>
+        <div class="fact"><strong>Active</strong><span>Listed as active by KPPSRA</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="container">
+      <div class="section-head">
+        <h2>A complete learning environment</h2>
+        <p>Designed to present the school's educational identity in a clear and welcoming way for parents and students.</p>
+      </div>
+      <div class="features">
+        <div class="feature"><div class="icon">📚</div><h3>Academic Learning</h3><p>A structured school and higher-secondary environment supporting students through important stages of their education.</p></div>
+        <div class="feature"><div class="icon">🏃</div><h3>Healthy Activity</h3><p>Daily physical activity can help improve fitness, strengthen the body and create healthier conditions for learning.</p></div>
+        <div class="feature"><div class="icon">🌱</div><h3>Student Development</h3><p>Education goes beyond textbooks by encouraging confidence, discipline, wellbeing and positive personal development.</p></div>
+        <div class="feature"><div class="icon">🎓</div><h3>Higher Secondary</h3><p>The institution is officially listed at the higher-secondary level in the KP private-school regulatory records.</p></div>
+        <div class="feature"><div class="icon">👩‍🏫</div><h3>Teaching Community</h3><p>The school has advertised teaching roles in subjects including Mathematics, Physics, Chemistry, Biology, English, Urdu and Islamiat.</p></div>
+        <div class="feature"><div class="icon">🤝</div><h3>Community Focus</h3><p>A local educational institution serving students and families in Tehkal Payan and the wider Peshawar community.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="quote">
+    <div class="container">
+      <blockquote>“Healthy children learn better.”</blockquote>
+      <p>Generation Model School & College — supporting learning through a balanced approach to education and wellbeing.</p>
+    </div>
+  </section>
+
+  <section id="values">
+    <div class="container">
+      <div class="section-head">
+        <h2>What we value</h2>
+        <p>Core themes reflected in the school's public description and educational profile.</p>
+      </div>
+      <div class="features">
+        <div class="feature"><div class="icon">🎯</div><h3>Purpose</h3><p>Help students build a strong educational foundation for their next stage of life.</p></div>
+        <div class="feature"><div class="icon">💪</div><h3>Wellbeing</h3><p>Recognize the connection between physical activity, healthy development and learning.</p></div>
+        <div class="feature"><div class="icon">✨</div><h3>Growth</h3><p>Encourage students to develop academically while building confidence and positive habits.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-head">
+        <h2>Visit or contact the school</h2>
+        <p>Use the publicly listed contact details below. Please confirm current admission and office information directly with the school.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="card">
+          <div class="contact-item"><div>📍</div><div><b>Address</b><span>Tehkal Payan, Peshawar, Khyber Pakhtunkhwa, Pakistan</span></div></div>
+          <div class="contact-item"><div>☎️</div><div><b>Phone</b><span>0333-9145866 • 0314-9282711</span></div></div>
+          <div class="contact-item"><div>✉️</div><div><b>Email</b><span>hussain_GMS@yahoo.com</span></div></div>
+          <div class="contact-item"><div>📘</div><div><b>Facebook</b><span>Generation Model School & College Tehkal Payan Peshawar</span></div></div>
+        </div>
+        <div class="map">
+          <div><div style="font-size:48px">📍</div><h3 style="color:#102a43">Tehkal Payan, Peshawar</h3><p style="color:#627d98">Generation Model School & College</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <div><strong>Generation Model School & College</strong><br><small>Tehkal Payan, Peshawar</small></div>
+    <small>© 2026 Generation Model School & College. Informational website.</small>
+  </div>
+</footer>
+</body>
+</html>
